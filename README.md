@@ -1,1 +1,1 @@
-# Homepage of EgrMed Group@NJU
+# Homepage of EMG@NJU
