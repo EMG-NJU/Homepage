@@ -22,34 +22,37 @@ document.addEventListener('DOMContentLoaded', function() {
       '<div>' +
         '<table width="100%" border="0" cellspacing="0" cellpadding="0">' +
           '<tr>' +
-            '<td width="5%" height="5" bgcolor="#F2F1EB"></td>' +
-            '<td width="15%" height="5" bgcolor="#F2F1EB"></td>' +
-            '<td width="15%" height="5" bgcolor="#F2F1EB"></td>' +
-            '<td width="15%" height="5" bgcolor="#F2F1EB"></td>' +
-            '<td width="15%" height="5" bgcolor="#F2F1EB"></td>' +
-            '<td width="15%" height="5" bgcolor="#F2F1EB"></td>' +
-            '<td width="15%" height="5" bgcolor="#F2F1EB"></td>' +
-            '<td width="5%" height="5" bgcolor="#F2F1EB"></td>' +
+            '<td width="4%" height="5" bgcolor="#F2F1EB"></td>' +
+            '<td width="13%" height="5" bgcolor="#F2F1EB"></td>' +
+            '<td width="13%" height="5" bgcolor="#F2F1EB"></td>' +
+            '<td width="13%" height="5" bgcolor="#F2F1EB"></td>' +
+            '<td width="13%" height="5" bgcolor="#F2F1EB"></td>' +
+            '<td width="13%" height="5" bgcolor="#F2F1EB"></td>' +
+            '<td width="13%" height="5" bgcolor="#F2F1EB"></td>' +
+	        '<td width="13%" height="5" bgcolor="#F2F1EB"></td>' +
+            '<td width="4%" height="5" bgcolor="#F2F1EB"></td>' +
           '</tr>' +
           '<tr>' +
-            '<td width="5%" bgcolor="#F2F1EB" style="text-align: center">&nbsp;</td>' +
-            '<td width="15%" bgcolor="#F2F1EB" style="text-align: center"><span style="color: #000000"><strong><a href="index.html" style="font-size: 24px">研究首页</a></strong></span></td>' +
-            '<td width="15%" bgcolor="#F2F1EB" style="text-align: center"><strong><a href="GroupPageColumn/reseaches.html" style="font-size: 24px">研究领域</a></strong></td>' +
-            '<td width="15%" bgcolor="#F2F1EB" style="text-align: center"><strong><a href="GroupPageColumn/members.html" style="font-size: 24px">团队成员</a></strong></td>' +
-            '<td width="15%" bgcolor="#F2F1EB" style="text-align: center"><strong><a href="GroupPageColumn/publications.html" style="font-size: 24px">发表论文</a></strong></td>' +
-            '<td width="15%" bgcolor="#F2F1EB" style="text-align: center"><strong><a href="GroupPageColumn/education.html" style="font-size: 24px">人才培养</a></strong></td>' +
-            '<td width="15%" bgcolor="#F2F1EB" style="text-align: center"><strong><a href="GroupPageColumn/news.html" style="font-size: 24px">新闻速递</a></strong></td>' +
-            '<td width="5%" bgcolor="#F2F1EB" style="font-family: \'微软雅黑\'">&nbsp;</td>' +
+            '<td width="4%" bgcolor="#F2F1EB" style="text-align: center">&nbsp;</td>' +
+            '<td width="13%" bgcolor="#F2F1EB" style="text-align: center"><span style="color: #000000"><strong><a href="index.html" style="font-size: 24px">研究首页</a></strong></span></td>' +
+            '<td width="13%" bgcolor="#F2F1EB" style="text-align: center"><strong><a href="GroupPageColumn/reseaches.html" style="font-size: 24px">研究领域</a></strong></td>' +
+            '<td width="13%" bgcolor="#F2F1EB" style="text-align: center"><strong><a href="GroupPageColumn/members.html" style="font-size: 24px">团队成员</a></strong></td>' +
+            '<td width="13%" bgcolor="#F2F1EB" style="text-align: center"><strong><a href="GroupPageColumn/publications.html" style="font-size: 24px">发表论文</a></strong></td>' +
+	  	    '<td width="13%" bgcolor="#F2F1EB" style="text-align: center"><strong><a href="ResearchPlatform/platform.html" style="font-size: 24px">电镜中心</a></strong></td>' +
+            '<td width="13%" bgcolor="#F2F1EB" style="text-align: center"><strong><a href="GroupPageColumn/news.html" style="font-size: 24px">新闻速递</a></strong></td>' +
+            '<td width="13%" bgcolor="#F2F1EB" style="text-align: center"><strong><a href="GroupPageColumn/education.html" style="font-size: 24px">人才培养</a></strong></td>' +
+            '<td width="4%" bgcolor="#F2F1EB" style="font-family: \'微软雅黑\'">&nbsp;</td>' +
           '</tr>' +
           '<tr>' +
-            '<td width="5%" height="5" bgcolor="#F2F1EB"></td>' +
-            '<td width="15%" height="5" bgcolor="#F2F1EB"></td>' +
-            '<td width="15%" height="5" bgcolor="#F2F1EB"></td>' +
-            '<td width="15%" height="5" bgcolor="#F2F1EB"></td>' +
-            '<td width="15%" height="5" bgcolor="#F2F1EB"></td>' +
-            '<td width="15%" height="5" bgcolor="#F2F1EB"></td>' +
-            '<td width="15%" height="5" bgcolor="#F2F1EB"></td>' +
-            '<td width="5%" height="5" bgcolor="#F2F1EB"></td>' +
+            '<td width="4%" height="5" bgcolor="#F2F1EB"></td>' +
+            '<td width="13%" height="5" bgcolor="#F2F1EB"></td>' +
+            '<td width="13%" height="5" bgcolor="#F2F1EB"></td>' +
+            '<td width="13%" height="5" bgcolor="#F2F1EB"></td>' +
+            '<td width="13%" height="5" bgcolor="#F2F1EB"></td>' +
+            '<td width="13%" height="5" bgcolor="#F2F1EB"></td>' +
+            '<td width="13%" height="5" bgcolor="#F2F1EB"></td>' +
+	        '<td width="13%" height="5" bgcolor="#F2F1EB"></td>' +
+            '<td width="4%" height="5" bgcolor="#F2F1EB"></td>' +
           '</tr>' +
         '</table>' +
       '</div>' +
