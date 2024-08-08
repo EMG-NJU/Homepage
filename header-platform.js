@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
   "use strict";
-  document.getElementById('header-news').innerHTML = 
+  document.getElementById('header-platform').innerHTML = 
     '<div>' +
       '<div>' +
         '<table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">' +
