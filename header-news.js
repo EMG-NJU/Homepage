@@ -22,14 +22,12 @@ document.addEventListener('DOMContentLoaded', function() {
       '<div>' +
         '<table width="100%" border="0" cellpadding="0" cellspacing="0">' +
           '<tr>' +
-            '<td width="5%" height="5" bgcolor="#F2F1EB"></td>' +
-            '<td width="15%" height="5" bgcolor="#F2F1EB"></td>' +
-            '<td width="15%" height="5" bgcolor="#F2F1EB"></td>' +
-            '<td width="15%" height="5" bgcolor="#F2F1EB"></td>' +
-            '<td width="15%" height="5" bgcolor="#F2F1EB"></td>' +
-            '<td width="15%" height="5" bgcolor="#F2F1EB"></td>' +
-            '<td width="15%" height="5" bgcolor="#F2F1EB"></td>' +
-            '<td width="5%" height="5" bgcolor="#F2F1EB"></td>' +
+            '<td width="10" height="5" bgcolor="#F2F1EB"></td>' +
+            '<td width="20%" height="5" bgcolor="#F2F1EB"></td>' +
+            '<td width="20%" height="5" bgcolor="#F2F1EB"></td>' +
+            '<td width="20%" height="5" bgcolor="#F2F1EB"></td>' +
+            '<td width="20%" height="5" bgcolor="#F2F1EB"></td>' +
+            '<td width="10%" height="5" bgcolor="#F2F1EB"></td>' +
           '</tr>' +
           '<tr>' +
             '<td width="10%" bgcolor="#F2F1EB" style="text-align: center">&nbsp;</td>' +
@@ -40,14 +38,12 @@ document.addEventListener('DOMContentLoaded', function() {
             '<td width="10%" bgcolor="#F2F1EB" style="font-family: \'微软雅黑\'">&nbsp;</td>' +
           '</tr>' +
           '<tr>' +
-            '<td width="5%" height="5" bgcolor="#F2F1EB"></td>' +
-            '<td width="15%" height="5" bgcolor="#F2F1EB"></td>' +
-            '<td width="15%" height="5" bgcolor="#F2F1EB"></td>' +
-            '<td width="15%" height="5" bgcolor="#F2F1EB"></td>' +
-            '<td width="15%" height="5" bgcolor="#F2F1EB"></td>' +
-            '<td width="15%" height="5" bgcolor="#F2F1EB"></td>' +
-            '<td width="15%" height="5" bgcolor="#F2F1EB"></td>' +
-            '<td width="5%" height="5" bgcolor="#F2F1EB"></td>' +
+            '<td width="10" height="5" bgcolor="#F2F1EB"></td>' +
+            '<td width="20%" height="5" bgcolor="#F2F1EB"></td>' +
+            '<td width="20%" height="5" bgcolor="#F2F1EB"></td>' +
+            '<td width="20%" height="5" bgcolor="#F2F1EB"></td>' +
+            '<td width="20%" height="5" bgcolor="#F2F1EB"></td>' +
+            '<td width="10%" height="5" bgcolor="#F2F1EB"></td>' +
           '</tr>' +
         '</table>' +
       '</div>' +
