@@ -32,8 +32,8 @@ document.addEventListener('DOMContentLoaded', function() {
           '<tr>' +
             '<td width="10%" bgcolor="#F2F1EB" style="text-align: center">&nbsp;</td>' +
             '<td width="20%" bgcolor="#F2F1EB" style="text-align: center"><span style="color: #000000"><strong><a href="ResearchPlatform/platform.html" style="font-size: 24px">科研平台</a></strong></span></td>' +
-            '<td width="20%" bgcolor="#F2F1EB" style="text-align: center"><strong><a href="ResearchPlatform/platform.html" style="font-size: 24px">设备介绍</a></strong></td>' +
-            '<td width="20%" bgcolor="#F2F1EB" style="text-align: center"><strong><a href="ResearchPlatform/platform.html" style="font-size: 24px">培训通知</a></strong></td>' +
+            '<td width="20%" bgcolor="#F2F1EB" style="text-align: center"><strong><a href="ResearchPlatform/equipment.html" style="font-size: 24px">设备介绍</a></strong></td>' +
+            '<td width="20%" bgcolor="#F2F1EB" style="text-align: center"><strong><a href="ResearchPlatform/training.html" style="font-size: 24px">设备培训</a></strong></td>' +
             '<td width="20%" bgcolor="#F2F1EB" style="text-align: center"><strong><a href="index.html" style="font-size: 24px">返回首页</a></strong></td>' +
             '<td width="10%" bgcolor="#F2F1EB" style="font-family: \'微软雅黑\'">&nbsp;</td>' +
           '</tr>' +
