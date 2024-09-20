@@ -45,25 +45,25 @@
     </tr>
 	  
 	<tr>
-      <td colspan="3" class="Context1" style="font-size: 20px"> 光场显微镜（Light Field Microscope，LFM），作为一种三维荧光成像技术，能够实现快速、无损伤的三维体重建，为生物医学研究提供了强大的活体实时观察能力。然而，面对复杂的成像场景，现有的衍射受限光场显微成像模型无法表征系统像差，从而导致成像质量退化。针对这一问题，本工作提出了一种系统球差估计算法，结合像差建模的深度学习光场成像模型——AM-VCD网络，有效消除球差对光场成像的不利影响，在活体生物实验中实现了高分辨、高帧率的实时三维重建。</td>
+      <td colspan="3" class="Context1" style="font-size: 20px">光场显微镜（Light Field Microscope，LFM），作为一种三维荧光成像技术，能够实现快速、无损伤的三维体重建，为生物医学研究提供了强大的活体实时观察能力。然而，面对复杂的成像场景，现有的衍射受限光场显微成像模型无法表征系统像差，从而导致成像质量退化。针对这一问题，本工作提出一种系统球差估计算法，结合像差建模的深度学习光场成像模型——AM-VCD网络，有效消除球差对光场成像的不利影响，在活体生物实验中实现了高分辨、高帧率的三维重建。</td>
     </tr>
 	  
 	<tr>
       <td colspan="3"><p style="text-align: center"><img src="images/ResearchProcess8-1.jpg" width="680" height="336" alt=""/></p>
-		  <p class="Context1" style="text-align: center; font-size: 20px;">图1  AM-VCD: 像差建模深度学习快速荧光显微三维重建</p>
+		  <p class="Context1" style="text-align: center; font-size: 20px;">图1 AM-VCD: 基于像差建模的深度学习快速荧光显微三维重建</p>
     </tr>
 	  
 	<tr>
-      <td colspan="3" class="Context1" style="font-size: 20px"> 许多生物样本（特别是活体样本），通常需要放置在溶液中（如琼脂和水）进行观察。然而，由于样本溶液与物镜浸润介质之间的折射率不匹配，直接对浸泡在溶液中的样本成像会产生巨大的球差。所提出的AM-VCD网络能够很好地解决这一问题，且无需对 LFM 系统的硬件进行修改。如下图所示，所提出方法有效实现了对溶液中大口黑鲈骨骼的高精度重建以及活体斑马鱼血管中中性粒细胞的追踪和心肌细胞的实时三维成像。AM-VCD有效解决斑马鱼体内稀疏的点状结构（中性粒细胞）和稠密的心肌结构（心脏）在光场成像中的重建问题，从而克服了在溶液浸润样本的情况下需要折射率匹配的限制，提高了光场显微观察的实用性和便利性。</td>
+      <td colspan="3" class="Context1" style="font-size: 20px">许多生物样本（尤其是活体样本）通常需要放置在溶液中（如琼脂和水）进行观察。然而，由于样本溶液与物镜浸润介质之间的折射率不匹配，直接对浸泡在溶液中的样本成像会产生巨大的球差。所提出的AM-VCD网络能够很好地解决这一问题，且无需对LFM的系统硬件进行修改。如下图所示，所提出方法有效实现了对溶液中大口黑鲈骨骼的高精度重建、以及对活体斑马鱼血管中中性粒细胞的实时追踪和心肌细胞的快速三维成像。AM-VCD能够有效解决斑马鱼体内稀疏点状结构（中性粒细胞）和稠密心肌结构（心脏）在光场成像中的重建难题，克服在溶液浸润情况下、样本成像通常需要进行折射率匹配的限制，从而提高了光场显微成像用于活体生物现象观测的实用性和便利性。</td>
     </tr>
 
 	<tr>
       <td colspan="3"><p style="text-align: center"><img src="images/ResearchProcess8-2.jpg" width="680" height="374" alt=""/></p>
-		  <p class="Context1" style="text-align: center; font-size: 20px;">图2  AM-VCD网络有效克服系统球差，实现对溶液中生物样本的高精度实时三维成像</p>
+		  <p class="Context1" style="text-align: center; font-size: 20px;">图2 AM-VCD网络有效克服系统球差、实现对溶液浸润生物样本的高精度实时三维成像</p>
     </tr>
 	  
 	<tr>
-      <td colspan="3" class="Context1" style="font-size: 20px">  该工作由周游助理教授和南京大学电子学院曹汛教授团队合作完成，研究组博士生金周宇为文章共同第一作者。论文2023年8月发表于国际光子学权威期刊《Laser & Photonics: Reviews》：Y. Zhou, et al., <a href="https://onlinelibrary.wiley.com/doi/10.1002/lpor.202300154">Aberration modeling in deep learning for volumetric reconstruction of light-field microscopy</a>. Laser & Photonics: Reviews, 2023, 17(10), 2300154. 光学显微成像普遍存在高质量配对真值数据难以获取的问题，对数据驱动深度学习算法的有效性和通用性提出了挑战。因此，周游助理教授近期也专注于采用无需数据驱动的自监督网络方法实现三维荧光显微成像，并应用于活体细胞和斑马鱼等活体生物现象的实时观测。</td>
+      <td colspan="3" class="Context1" style="font-size: 20px">该工作由周游助理教授与南京大学电子学院曹汛教授团队合作完成，研究组博士生金周宇为文章共同第一作者。论文2023年8月发表于国际光子学权威期刊《Laser & Photonics: Reviews》：Y. Zhou, et al., <a href="https://onlinelibrary.wiley.com/doi/10.1002/lpor.202300154">Aberration modeling in deep learning for volumetric reconstruction of light-field microscopy</a>. Laser & Photonics: Reviews, 2023, 17(10), 2300154. 此外，光学显微成像系统普遍存在高质量配对真值数据难以获取的问题，这对基于数据驱动的深度学习算法用于显微成像的有效性和通用性提出了挑战。因此，周游助理教授近期也专注于探索无需大规模数据集的自监督网络方法，以实现高保真的三维荧光显微成像，并将其应用于细胞和斑马鱼等活体生物现象的实时观测。</td>
     </tr>	  
 	   
 	<tr>
@@ -75,21 +75,21 @@
     </tr>
 	  
 	<tr>
-      <td colspan="3" class="Context1" style="font-size: 20px"> 精确评估心功能在心血管疾病的诊断和监测中至关重要。二维超声心动图（2DE）因其广泛的可及性而被广泛应用，但其操作需要高度专业的培训，并且容易受到操作者之间技术差异的影响，同时缺乏三维结构信息。为了解决这些问题，本工作提出CardiacField策略：使用2DE探头的新型计算超声心动图解决方案。该策略能够自动且准确地估算左心室（LV）和右心室（RV）的射血分数（EF），图像采集流程简便。CardiacField采用物理启发的神经网络（INR）构建，通过多视角二维超声图像重建三维心脏，并自动分割LV和RV区域以计算体积和EF。将CardiacField策略对于127名患者的分析结果与专家解读及最新的二维视频深度学习模型进行了对比，验证了其在EF估算方面的准确性。此外，本工作也评估了策略在56名患者数据中的成像质量和三维重建性能，以及在50名患者中针对不同设备和非专业人员数据采集的普适性和便捷性。结果显示，CardiacField可以通过简单的心尖环形扫描和低成本的2DE探头实现在不到两分钟内重建三维心脏，其预测的LVEF和RVEF不仅具有与三维超声（3DE）探头相媲美的准确性，使其具有成为临床中一种经济高效选择的潜力。</td>
+      <td colspan="3" class="Context1" style="font-size: 20px"> 精确评估心功能在心血管疾病的诊断和监测中至关重要。二维超声心动图（2DE）因其广泛的可及性而被普遍应用，但其操作往往需要高度专业的培训，且成像质量容易受到操作者之间技术差异的影响，同时也缺乏三维结构信息。为了解决这些问题，本工作提出CardiacField策略：使用2DE探头的新型计算超声心动图解决方案。该策略采用物理启发的神经网络（INR）构建，通过多视角二维超声图像重建三维心脏，图像采集流程简便，并能够自动分割左心室（LV）和右心室（RV）区域、以计算其体积和射血分数（EF）。本工作通过对127名受试者的临床数据进行分析，并与专家解读以及最新的二维超声视频深度学习模型进行对比，验证了CardiacField策略在评估EF方面的准确性。本工作也进一步评估了CardiacField策略在56名患者数据中的成像质量和三维重建性能，并验证了其对于使用不同品牌设备、或由非专业人员进行数据采集时的普适性和便捷性。总之，CardiacField通过简单的心尖环形扫描和低成本的2DE探头在不到两分钟内实现了心脏超声重建三维，其预测的LVEF和RVEF具有与三维超声探头（3DE）相媲美的准确性。在最新的测试中，我们进一步提升了单个心脏体积的三维重建速度(2分钟内到10秒内），使CardiacField有望成为临床中一种经济高效的心脏评估选择。</td>
     </tr>
 	  
 	<tr>
       <td colspan="3"><p style="text-align: center"><img src="images/ResearchProcess8-3.jpg" width="680" height="486" alt=""/></p>
-		  <p class="Context1" style="text-align: center; font-size: 20px;">图3  CardiacField策略图像采集和三维重建流程</p>
+		  <p class="Context1" style="text-align: center; font-size: 20px;">图3 CardiacField策略的图像采集模式和三维重建流程</p>
     </tr>
 	  
 	<tr>
-      <td colspan="3" class="Context1" style="font-size: 20px"> 准确的心肌运动追踪对于早期识别心肌功能障碍至关重要，但现有成像技术在空间和时间维度上的运动估计不够完整和准确，影响早期诊断。因此，在上述研究的基础上，本工作进一步提出神经心脏运动场（NeuralCMF）方法，通过隐式神经表示（INR）同时建模心脏的三维结构和六维前后运动。该方法突破了像素级限制，能够在整个心动周期中任意时间点上连续查询心肌的精确形状和运动，增强了对心脏动态的详细分析。该研究的主要特点包括：（1）无配对数据集需求：NeuralCMF在空间和时间维度上利用物理知识先验进行自监督优化，兼容多角度二维和三维超声心动图视频输入，无需额外的配对数据集；（2）全周期心肌运动估计：该方法可以在整个心动周期内，对任意特定点的精确形状和运动进行连续查询，提升了心脏动力学的详细分析能力。该研究通过三个代表性数据集对NeuralCMF进行了全面验证。STRAUS数据集：实验结果表明，NeuralCMF在左心室（LV）区域的中位跟踪误差和余弦相似度方面显著优于现有方法，表现出较高鲁棒性和准确性。2DE和3DE视频数据集：在这两个数据集中，NeuralCMF的定量和定性评估均显示出卓越的性能，尤其在心脏左房（LA）和右房（RA）区域的跟踪精度上，显著高于对比方法。</td>
+      <td colspan="3" class="Context1" style="font-size: 20px"> 准确的心肌运动追踪能够帮助医生在早期识别心肌功能障碍，但现有超声成像技术在空间维和时间维的运动估计均不够完整和准确，影响早期诊断。因此，在上述研究的基础上，本工作进一步提出神经心脏运动场（NeuralCMF）方法，通过隐式神经表示（INR）同时建模心脏的三维结构和六维前后运动。该方法突破图像的像素限制，能够在整个心动周期中的任意时间点上连续查询心肌的精确形状和运动，从而增强了对心脏动态的精准分析。NeuralCMF方法的主要优势在于：（1）无需配对数据集：NeuralCMF在空间维和时间维上利用物理知识先验进行自监督优化，无需额外的配对数据集，且兼容多角度二维超声心动图和三维超声心动图的视频流输入；（2）全周期心肌运动估计：NeuralCMF可以在整个心动周期内，对任意特征点的精确形状和运动进行连续查询，提升了心脏动力学的精准分析能力。NeuralCMF在三个代表性数据集进行了性能验证：在STRAUS数据集中，NeuralCMF在左心室（LV）区域的中位跟踪误差和余弦相似度上显著优于现有方法，表现出较高鲁棒性和准确性；在2DE和3DE视频数据集中，NeuralCMF的定量/定性评估均显示出卓越的性能，尤其在心脏左房（LA）和右房（RA）区域的跟踪精度上显著优于现有对比方法。</td>
     </tr>	
 	  
 	<tr>
       <td colspan="3"><p style="text-align: center"><img src="images/ResearchProcess8-4.jpg" width="680" height="861" alt=""/></p>
-		  <p class="Context1" style="text-align: center; font-size: 20px;">图4  NeuralCMF在整个心动周期内的斑点追踪效果展示</p>
+		  <p class="Context1" style="text-align: center; font-size: 20px;">图4 NeuralCMF在整个心动周期内的斑点追踪效果展示</p>
     </tr>
 	  
 	<tr>
@@ -108,40 +108,40 @@
     </tr>
 	  
 	<tr>
-      <td colspan="3" class="Context1" style="font-size: 20px"> 无透镜（芯）片上成像是一种成本低廉的高通量显微成像方式，具有成像通量大、系统简洁紧凑等优点。现有无透镜片上显微系统为了实现高分辨率、高质量成像，往往采用多样性测量策略，即将图像传感器或待观测物体移动至不同的轴向或横向位置，或在多波长、多角度照明下，采集样本的多张衍射图像。然而，多样性采集往往依赖于系统硬件的同步控制，会显著提升系统复杂度，并增加图像采集时间，不利于快速成像；而且采集得到多张大视场图像，导致待处理的实验数据量大，重建时间冗长。因此，本工作基于简易手动控制硬件架构和并行计算策略，提出了一种快速采集、快速重构的高通量无透镜显微成像方案，能够实现对于样本大视场内不同子区域的逐区域聚焦和像素超分辨成像性能。</td>
+      <td colspan="3" class="Context1" style="font-size: 20px"> 无透镜（芯）片上成像是一种成本低廉的高通量显微成像方式，具有成像通量大、系统简洁紧凑等优点。现有无透镜片上显微系统为了实现高分辨率、高质量成像，往往采用多样性测量策略，即将图像传感器（或待观测物体）移动至不同的轴向/横向位置，或置于在多波长、多角度照明下，从而采集样本的多张衍射图像。然而，多样性采集往往依赖于系统硬件的高精度同步控制，会显著提升系统复杂度、增加图像采集时间，不利于快速成像；而且多样性采集获取多张大视场图像，会导致待处理的实验数据量大，重建时间冗长。为了解决上述问题，本工作基于简易手动的硬件控制架构和并行计算策略，提出了一种快速采集、快速重构的高通量无透镜显微成像方案，且同时具备大视场内的逐区域聚焦能力和像素超分辨成像性能。</td>
     </tr>
 	  
 	<tr>
       <td colspan="3"><p style="text-align: center"><img src="images/ResearchProcess8-5.jpg" width="680" height="651" alt=""/></p>
-		  <p class="Context1" style="text-align: center; font-size: 20px;">图5  快速采集与重构、逐区域聚焦的高通量无透镜片上显微成像策略</p>
+		  <p class="Context1" style="text-align: center; font-size: 20px;">图5 快速采集与重构、逐区域聚焦的高通量无透镜片上显微成像策略</p>
     </tr>
 	  
 	<tr>
-      <td colspan="3" class="Context1" style="font-size: 20px"> 具体来说，本工作提出了一种简单连续的数据采集策略，通过手动控制轴向位移台实现图像传感器的连续任意移动；在移动过程中，图像传感器连续采集不同高度下的样本多张衍射图像，实现了秒级的数据采集。基于硬件系统，进一步提出一种高速并行的大规模相位恢复框架，集成了高精度参数校准、分区域相位恢复、分区域自动对焦和并行加速模块等，显著提升了重建效率及精度。所提出无透镜（芯）片上成像方法能够实现对于人体皮肤组织、肺肿瘤切片等样本的高通量快速复振幅成像（同时得到强度和相位图像），获得7.5 × 5.5平方毫米视场、1.38微米分辨率、分区域聚焦等性能，而只需要 0.5秒图像采集时间和17秒图像重建时间。结合像素超分辨技术，所提出成像方法能够对外周血涂片实现了7.5 × 5.5平方毫米视场、0.98 μm分辨率的成像性能，有利于细胞分割及计数等生物医学图像后续处理和分析。</td>
+      <td colspan="3" class="Context1" style="font-size: 20px">具体来说，本工作提出了一种简单连续的数据采集策略，通过手动控制轴向位移台、实现图像传感器的连续任意多高度位移；在位移过程中，图像传感器同时连续采集不同高度下的多张样本衍射图像，在1秒内实现了数据采集。基于上述硬件系统，进一步提出高速并行的大规模相位恢复框架，该框架集成高精度参数校准、分区域相位恢复、分区域自动对焦、以及并行加速运算等模块，显著提升了大规模无透镜成像的重建效率及精度。将所提出无透镜（芯）片上成像方法应用于人体皮肤组织、肺肿瘤切片等样本的高通量复振幅成像中（即同时得到样本的强度和相位图像），实现了7.5×5.5平方毫米视场、1.38微米分辨率、分区域聚焦等性能，且只需要0.5秒的图像采集时间和17秒的图像重建时间；进一步结合像素超分辨技术，实现了对于外周血涂片的7.5×5.5平方毫米视场、0.98微米分辨率的图像重构，并应用于细胞分割、计数、虚拟染色等后续处理和分析任务。</td>
     </tr>		    
 	<tr>
       <td colspan="3"><p style="text-align: center"><img src="images/ResearchProcess8-6.jpg" width="680" height="465" alt=""/></p>
-		  <p class="Context1" style="text-align: center; font-size: 20px;">图6  高通量无透镜片上显微策略对于皮肤组织成像性能</p>
+		  <p class="Context1" style="text-align: center; font-size: 20px;">图6 高通量无透镜片上显微策略对于皮肤组织的成像性能展示</p>
     </tr>
 	  
 	<tr>
-      <td colspan="3" class="Context1" style="font-size: 20px"> 该项工作2024年6月发表于国际光子学权威期刊《Laser & Photonics: Reviews》：Y. Zhou, et al., <a href="https://onlinelibrary.wiley.com/doi/10.1002/lpor.202400498">Large-scale lensless microscopy with fast acquisition and region-wise focusing</a>. Laser & Photonics Reviews, 2024, 2400498.</td>
+      <td colspan="3" class="Context1" style="font-size: 20px">该项工作2024年6月发表于国际光子学权威期刊《Laser & Photonics: Reviews》：Y. Zhou, et al., <a href="https://onlinelibrary.wiley.com/doi/10.1002/lpor.202400498">Large-scale lensless microscopy with fast acquisition and region-wise focusing</a>. Laser & Photonics Reviews, 2024, 2400498.</td>
     </tr>			  
 	  
 	<tr>
       <td>&nbsp;</td>
     </tr>
     <tr>
-      <td colspan="3" class="Context1" style="font-size: 20px"> 光学微型内窥镜正广泛应用于各类生物医学和临床实践。作为一种半侵入式成像工具，内窥镜能够对人体（或其他动物）的组织和内脏进行探测和成像，实现常规方法难以达到的可视化效果；还能应用于研究动物在自由活动状态下的多种脑活动。在现有光学微型内窥镜中，高成像质量、大探测深度、微探头尺寸通常不可兼得，这使得深入探查人体微血管、肺泡、耳蜗以及小动物的肠胃等微小狭长部位成为难题。为解决上述问题，本研究利用单模光纤束和小尺寸光场成像模式构建了全光内窥探头，实现了具有高成像质量、大探测深度（约50 cm）、微探头尺寸（2 mm直径）的快照式三维荧光内窥成像系统；结合光学系统优化和字典学习算法，进一步提升成像效果。柔性可弯曲的光纤束也为实际操作提供了更大的便利性和灵活性。</td>
+      <td colspan="3" class="Context1" style="font-size: 20px">光学微型内窥镜正广泛应用于各类生物医学和临床实践。作为一种半侵入式成像工具，内窥镜能够对人体（或动物）的组织和内脏进行探测和成像，实现常规方法难以达到的可视化效果；还能应用于研究动物在自由活动状态下的多种脑活动。在现有光学微型内窥镜中，高成像质量、大探测深度、微探头尺寸通常不可兼得，这使得深入探查人体微血管、肺泡、耳蜗、以及小动物的肠胃等微小狭长部位成为难题。为解决上述问题，本研究利用单模光纤束和小尺寸光场成像模式构建了全光内窥探头，实现了具有高成像质量、大探测深度（约50cm）、微探头尺寸（2mm直径）的快照式三维荧光内窥成像系统；结合光学系统优化和字典学习算法，进一步提升成像效果。柔性可弯曲的光纤束也为实际操作提供了便利性和灵活性。</td>
     </tr>
 	  
 	<tr>
       <td colspan="3"><p style="text-align: center"><img src="images/ResearchProcess8-7.jpg" width="600" height="500" alt=""/></p>
-		  <p class="Context1" style="text-align: center; font-size: 20px;">图7  基于单模光纤束和小尺寸光场成像模式的全光内窥探头及成像效果展示</p>
+		  <p class="Context1" style="text-align: center; font-size: 20px;">图7 基于单模光纤束和小尺寸光场成像模式的全光内窥探头及成像效果展示</p>
     </tr>
 	  
 	<tr>
-      <td colspan="3" class="Context1" style="font-size: 20px"> 如上图所示，单模光纤束用以中继来自内窥观测目标的光信号，直径为2 mm的小型微透镜阵列放置在光纤末端的成像面以获得场景的深度信息，小型成像透镜对提供对于待观测物体的3倍放大成像。该工作2022年发表于国际光子学权威期刊《Photonics Research》：Y. Zhou, et al., <a href="https://opg.optica.org/PRJ/abstract.cfm?uri=PRJ-10-9-2247">Light-field micro-endoscopy using a fiber bundle: a snapshot 3D epi-fluorescence endoscope</a>. Photonics Research, 2022, 10(9), 2247-2260，并被选为编辑精选文章（Editor's Pick）。</td>
+      <td colspan="3" class="Context1" style="font-size: 20px"> 如上图所示，单模光纤束用以中继来自内窥观测目标的光信号，直径为2mm的小型微透镜阵列放置在光纤末端成像面，以获得场景的深度信息，成对的小型成像透镜用以提供对于待观测物体的3倍放大成像。该工作2022年发表于国际光子学权威期刊《Photonics Research》：Y. Zhou, et al., <a href="https://opg.optica.org/PRJ/abstract.cfm?uri=PRJ-10-9-2247">Light-field micro-endoscopy using a fiber bundle: a snapshot 3D epi-fluorescence endoscope</a>. Photonics Research, 2022, 10(9), 2247-2260，并被选为编辑精选文章（Editor's Pick）。</td>
     </tr>		  
 	
     </table>
