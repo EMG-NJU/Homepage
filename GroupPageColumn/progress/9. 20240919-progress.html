@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<base href="https://emg-nju.github.io/Homepage/">
+<link rel="stylesheet" href="css/style.css">
+<title>研究进展 | 南京大学工程医学研究组</title>
+<script src="header-news.js"></script>
+</head>
+
+<body>
+<div id="header-news"></div>
+<div>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+	  <td colspan="3" align="center" style="font-family: '微软雅黑'; color: #000000; font-size: 24px;"><strong>快速高通量无透镜（芯）片上成像</strong></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+
+  </table>
+</div>
+<div>
+  <table width="100%" border="0" cellspacing="10px" cellpadding="0">
+    <tr>
+      <td width="30">&nbsp;</td>
+      <td colspan="3" class="author1" align="center" style="font-size: 20px"><strong>时间：2024/09/19&nbsp; &nbsp; 作者：周游 宋蔚枝</strong></td>
+      <td width="30">&nbsp;</td>
+    </tr>
+
+	<tr>
+	  <td rowspan="15">&nbsp;</td>
+      <td colspan="3" class="Context1" style="font-size: 20px"> 无透镜（芯）片上成像是一种成本低廉的高通量显微成像方式，具有成像通量大、系统简洁紧凑等优点。现有无透镜片上显微系统为了实现高分辨率、高质量、无伪影成像，往往采用多样性测量策略，即将图像传感器（或待观测物体）移动至不同的轴向/横向位置，或置于在多波长、多角度照明下，从而采集样本的多张衍射图像。然而，多样性采集往往依赖于系统硬件的高精度同步控制，会显著提升系统复杂度、增加图像采集时间，不利于快速成像；而且多样性采集获取多张大视场图像，会导致待处理的实验数据量大，重建时间冗长。为了解决上述问题，本工作基于简易手动的硬件控制架构和并行计算策略，提出了一种快速采集、快速重构的高通量无透镜显微成像方案，且同时具备大视场内的逐区域聚焦能力和像素超分辨成像性能。</td>
+    </tr>
+	  
+	<tr>
+      <td colspan="3"><p style="text-align: center"><img src="images/ResearchProcess8-5.jpg" width="680" height="651" alt=""/></p>
+		  <p class="Context1" style="text-align: center; font-size: 20px;">图1 快速采集与重构、逐区域聚焦的高通量无透镜片上显微成像策略</p>
+    </tr>
+	  
+	<tr>
+      <td colspan="3" class="Context1" style="font-size: 20px">具体来说，本工作提出了一种简单连续的数据采集策略，通过手动控制轴向位移台、实现图像传感器的连续任意多高度位移；在位移过程中，图像传感器同时连续采集不同高度下的多张样本衍射图像，在1秒内实现了数据采集。基于上述硬件系统，进一步提出高速并行的大规模相位恢复框架，该框架集成高精度参数校准、分区域相位恢复、分区域自动对焦、以及并行加速运算等模块，显著提升了大规模无透镜成像的重建效率及精度。将所提出无透镜（芯）片上成像方法应用于人体皮肤组织、肺肿瘤切片等样本的高通量复振幅成像中（即同时得到样本的强度和相位图像），实现了7.5×5.5平方毫米视场、1.38微米分辨率、分区域聚焦等性能，且只需要0.5秒的图像采集时间和17秒的图像重建时间；进一步结合像素超分辨技术，实现了对于外周血涂片的7.5×5.5平方毫米视场、0.98微米分辨率的图像重构，并应用于细胞分割、计数、虚拟染色等后续处理和分析任务。</td>
+    </tr>		    
+	<tr>
+      <td colspan="3"><p style="text-align: center"><img src="images/ResearchProcess8-6.jpg" width="680" height="465" alt=""/></p>
+		  <p class="Context1" style="text-align: center; font-size: 20px;">图2 高通量无透镜片上显微策略对于皮肤组织的成像性能展示</p>
+    </tr>
+	  
+	<tr>
+      <td colspan="3" class="Context1" style="font-size: 20px">该项工作2024年6月发表于国际光子学权威期刊《Laser & Photonics: Reviews》：Y. Zhou, et al., <a href="https://onlinelibrary.wiley.com/doi/10.1002/lpor.202400498">Large-scale lensless microscopy with fast acquisition and region-wise focusing</a>. Laser & Photonics Reviews, 2024, 2400498.</td>
+    </tr>			  	  
+	
+    </table>
+</div>
+<p>&nbsp;</p>
+</body>
+</html>
