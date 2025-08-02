@@ -76,7 +76,24 @@ a:hover {
 	font-family: "微软雅黑";
 }
 
+.flashing-title {
+  font-weight: bold;
+  color: red;
+  animation: flash 1s infinite;
+  text-decoration: none;
+}
 
+@keyframes flash {
+  0%, 100% {
+    color: red;
+  }
+  50% {
+    color: white;
+    background-color: red;
+    padding: 0 0.5em;
+    border-radius: 6px;
+  }
+}
 /*
 
 a:active {
