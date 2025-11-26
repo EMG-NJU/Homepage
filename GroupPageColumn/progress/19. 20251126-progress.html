@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<base href="https://emg-nju.github.io/Homepage/">
+<link rel="stylesheet" href="css/style.css">
+<title>研究进展 | 南京大学工程医学研究组</title>
+<script src="header-news.js"></script>
+</head>
+
+<body>
+<div id="header-news"></div>
+<div>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+	  <td colspan="3" align="center" style="font-family: '微软雅黑'; color: #000000; font-size: 24px;"><strong>封面：高斯自适应层析，让3D细胞世界更清晰</strong></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+
+  </table>
+</div>
+<div>
+  <table width="100%" border="0" cellspacing="10px" cellpadding="0">
+    <tr>
+      <td width="30">&nbsp;</td>
+      <td colspan="3" class="author1" align="center" style="font-size: 20px"><strong>时间：2025/11/26&nbsp; &nbsp; 作者：徐宸宇 金周宇 周游</strong></td>
+      <td width="30">&nbsp;</td>
+    </tr>
+	  
+	<tr>
+      <td rowspan="18">&nbsp;</td>
+      <td colspan="3" class="Context1" style="font-size: 20px">真实可信的三维观测对于细胞及细胞间活动的可靠研究至关重要，而揭示其动态过程更是生命科学的核心目标之一。传统宽场显微镜通常仅能获得二维投影，尽管共聚焦、光片等扫描式三维显微技术能够实现体数据采集，但在长时程活体成像中仍面临着成像效率与光剂量之间的权衡。光场显微镜（Light Field Microscopy, LFM）通过单次曝光同时获取空间与角度信息，能够实现快速活体三维成像，但空间分辨率较低且受限于非均匀采样。傅里叶光场显微（Fourier Light Field Microscopy, FLFM）通过在光瞳面划分子孔径获得多视角信息，显著改善空间分辨率与采样均匀性，已成为近年来光场技术的重要发展方向。</td>
+    </tr>
+	<tr>
+      <td>&nbsp;</td>
+    </tr>  		  
+	<tr>
+      <td colspan="3" class="Context1" style="font-size: 20px">在FLFM三维重建中，基于Richardson-Lucy（RL）解卷积的经典方法因逆问题的高度欠定性，常导致重建轴向分辨率不足与信号衰减。深度学习方法虽能进一步改善分辨率，但依赖高质量配对训练数据与结构先验，在实际应用中容易出现泛化能力受限的问题。为缓解数据依赖，物理模型驱动的隐式神经表示（Implicit Neural Representation, INR）等自监督方法被引入，重建质量优于RL解卷积，并展现出良好的细节保真度。然而，其性能提升伴随一定的计算与内存开销。三维高斯泼溅（3D Gaussian Splatting, 3DGS）作为一种近年来在计算机图形学领域兴起的渲染算法，能够在与INR取得相近渲染质量情况下实现更高的计算效率，并已拓展至多种三维成像场景，其高精度建模能力为光学显微成像带来了新的可能性。</td>
+    </tr>
+	<tr>
+      <td>&nbsp;</td>
+    </tr>  		
+	 
+	 <tr>
+      <td colspan="3" class="Context1" style="font-size: 20px">研究组与电子学院曹汛教授团队合作，在Advanced Imaging 上发表题为“3D Gaussian Adaptive Reconstruction for Fourier Light-Field Microscopy”的研究论文。该工作首次将3DGS技术引入光学显微成像，并应用于FLFM模态，提出了全新的三维高斯自适应层析（3D Gaussian Adaptive Tomography, 3DGAT）框架。通过引入稳健的维纳滤波初始化策略与空-频域联合损失约束，并将高效的3D高斯表示与FLFM物理成像模型深度融合，该方法实现了具备自适应强度调节能力的高质量三维荧光重建，为高速高分辨活体三维成像提供了新路径。</td>
+    </tr>
+	<tr>
+      <td>&nbsp;</td>
+    </tr>  	 
+	  
+	  
+	<tr>
+      <td colspan="3"><p style="text-align: center"><img src="images/ResearchProcess19-1.jpg" width="700" height="333" alt=""/></p>
+		  		  <p class="Context1" style="text-align: center; font-size: 20px;">图1. 三维高斯自适应层析（3DGAT）算法框架</p>
+		</td>
+    </tr>  
+	
+	<tr>
+      <td>&nbsp;</td>
+    </tr>  	  
+		  
+	<tr>
+      <td colspan="3" class="Context1" style="font-size: 20px">
+		<p><strong>1. 3DGAT三维成像性能评估</strong></p>
+		<p>为验证所提出3DGAT方法的重建性能与分辨率，研究团队首先搭建了仿真实验流程：生成直径1 μm的荧光小球，并通过FLFM波动光学模型投影生成二维光场图像，成像参数设置为七个视角与20×/0.45 NA物镜；随后分别采用传统RL解卷积和3DGAT方法进行三维重建。结果如图2(a)所示，3DGAT的重建结果与真值高度一致；相比之下，RL解卷积在横向方向上过度锐化，而在轴向方向出现明显的拉伸，从而影响对真实结构的还原。</p>
+		<p>&nbsp;</p>
+		
+		<p>为验证3DGAT对复杂结构的重建能力，研究团队在相同成像参数下，模拟了具有随机曲率的三维网状结构。结果表明，与RL解卷积相比，3DGAT能够更准确地恢复微细结构细节，且图像对比度更高，重建结果更接近真实值。峰值信噪比（Peak Signal-to-Noise Ratio, PSNR）、结构相似性指数（Structural Similarity Index, SSIM）以及学习式感知图像块相似度（Learned Perceptual Image Patch Similarity, LPIPS）等多项定量指标也验证了这一点。此外，团队还基于瑞利判据评估了3DGAT的横向分辨率：通过模拟不同间距（2.40 μm到1.20 μm）、线宽0.48 μm的平行荧光线对，探索3DGAT与RL解卷积方法的分辨率极限。结果表明，3DGAT可清晰分辨出1.44 μm间距的三条平行线，而RL解卷积在1.68 μm间距下已难以分辨。</p>
+		<p>&nbsp;</p>
+		
+		<p style="text-align: center"><img src="images/ResearchProcess19-2.jpg" width="700" height="700" alt=""/></p>
+		  		  <p class="Context1" style="text-align: center; font-size: 20px;">图2. 3DGAT在模拟数据上的性能与分辨率测试</p> 
+	    <p>&nbsp;</p>
+		  
+		<p>为进一步验证3DGAT在复杂生物结构中的重建能力，研究团队以细节丰富的蒲公英绒毛样本开展仿真实验。通过具备七视角的FLFM系统和20×/0.45 NA物镜模拟生成二维光场数据，并将3DGAT与RL解卷积进行对比。同时对比了不同损失函数配置，包括常用的均方误差（Mean Squared Error, MSE）损失、3DGS原始工作中使用的平均绝对误差（Mean Absolute Error, MAE）+SSIM组合损失、以及本文提出的MSE+傅里叶域损失（Fourier Domain Loss, FDL）空-频域联合约束，以评估不同损失策略对3DGAT重建性能的影响。</p>
+		<p>&nbsp;</p>
+		
+		<p>从图3(a)可以看到，与RL解卷积相比，3DGAT在x-y、x-z与y-z方向的最大强度投影（Maximum Intensity Projection, MIP）中均能再现清晰的结构细节，特别是轴向解析能力显著增强；图3(b)蓝/白箭头示意的放大区域，也直观展示了这种细节优势。进一步观察图3(b) 与图3(c)，可以发现MSE+FDL损失相较其他损失更能保留微结构纹理，重建结果与真实样本更一致。图3(d)的信号强度曲线表明，3DGAT能准确还原三个峰值并保持精确位置对齐，而图3(e)的定量指标（PSNR、SSIM、LPIPS）也显示该方法表现最佳。综合来看，在复杂生物样本测试中，3DGAT相较于RL解卷积具备更高的分辨率与保真度，同时验证了所提出的空-频域联合约束损失（MSE+FDL）对提升三维结构重建精度的有效性。</p>
+		<p>&nbsp;</p>
+		
+		<p style="text-align: center"><img src="images/ResearchProcess19-3.jpg" width="700" height="547" alt=""/></p>
+		  		  <p class="Context1" style="text-align: center; font-size: 20px;">图3. RL解卷积与多损失策略下3DGAT重建性能比较</p> 
+	    <p>&nbsp;</p>
+		  
+		 <p><strong>2. 3DGAT赋能斑马鱼活体钙信号动态重建</strong></p>
+		<p>研究团队在真实斑马鱼实验数据上验证了该方法在三维时间序列成像中的有效性与稳定性。该数据由具备29个视角、16×/0.8 NA水浸物镜的FLFM系统采集，如图4(a)所示。为抑制实验噪声导致的针状伪影，团队进一步引入了有效秩正则化（effective rank regularization, erank）。图4(b)展示了RL解卷积、未加erank的原始3DGAT、以及加入erank的3DGAT（3DGAT-erank）的最大强度投影结果。放大区域如图4(c)所示：3DGAT-erank在结构细节保留方面明显优于RL解卷积，且相较于原始3DGAT，成像伪影明显减少；图4(e)的强度曲线进一步验证了这一点。此外，图4(d)中的傅里叶域可视化显示，3DGAT能更有效利用物理先验与多视角冗余信息，缓解傅里叶域中的缺失锥（missing cone）问题，从而实现更高分辨率的重建。图4(f)的傅里叶环相关质量评估（Fourier ring correlation quality estimate, FRC-QE）指标进一步表明，3DGAT-erank在频率细节恢复方面表现更优。</p>
+		<p>&nbsp;</p>
+		
+		<p>鉴于FLFM的高速体积成像能力，研究团队利用3DGAT-erank对连续120帧体数据进行三维重建，并参考相关方法提取手动标注神经元的时间钙信号变化轨迹。图5展示了基于3DGAT-erank的典型重建结果及对应分析过程：图5(a)为不同时刻的最大强度投影结果，可见神经元结构在三维方向均被清晰解析；图5(b)展示了局部放大图，虚线圆标注了手动标注的神经元位置，整体呈现出良好的细节保真度与信噪比；图5(c)则给出了标注神经元的时间钙信号轨迹，明确揭示了神经元的动态活动模式。以上结果表明，3DGAT-erank能够在真实生物成像场景中稳定重建连续三维结构，并支持可靠的神经活动动态分析。</p>
+		<p>&nbsp;</p>
+		
+		<p style="text-align: center"><img src="images/ResearchProcess19-4.jpg" width="700" height="689" alt=""/></p>
+		  		  <p class="Context1" style="text-align: center; font-size: 20px;">图4. 3DGAT应用于真实斑马数据的三维(x-y-z)钙信号重建</p> 
+	    <p>&nbsp;</p> 
+		<p style="text-align: center"><img src="images/ResearchProcess19-4.jpg" width="700" height="696" alt=""/></p>
+		  		  <p class="Context1" style="text-align: center; font-size: 20px;">图5. 3DGAT应用于斑马鱼时序数据的钙活动分析</p> 
+	    <p>&nbsp;</p>   
+		  
+			</td>
+    </tr>
+	<tr>
+      <td>&nbsp;</td>
+    </tr>  	 
+	  	  
+	<tr>
+      <td colspan="3" class="Context1" style="font-size: 20px">研究团队首次将3DGS引入光学显微成像，并成功将其应用于FLFM模态，提出了全新的3DGAT框架。与传统基于体素或解卷积的三维重建不同，3DGAT把光学物理模型与高斯点云表征相深度融合，使每个高斯点不仅承载光强信息，还内嵌隐式几何与空间先验。这种设计让重建空间更“紧凑”，从而在求解病态逆问题时，能更自然地约束解的稳定性与结构连续性，为高保真三维荧光成像提供了全新范式。</td>
+    </tr>
+	  
+	<tr>
+      <td>&nbsp;</td>
+    </tr>  
+	   
+	 <tr>
+      <td colspan="3" class="Context1" style="font-size: 20px">未来，在场景优化过程中显式控制高斯点的数量，以改进体素化启发式算法的同时，团队计划开发适用于多种显微成像模式的解析化物理建模，以更直接地将三维分布映射至二维观测，提高计算效率与建模精度。总体而言，该工作为3DGS向更广泛的生物医学成像领域拓展奠定了坚实基础。通过进一步融合多视角显微系统的物理模型，3DGS有望在高精度、快速三维重建方向持续突破。同时，团队也将探索结合物理先验与成像模式约束的高效正则化策略，在重建质量、数据效率和计算成本之间找到最佳平衡，并推进该框架在细胞动力学、活体功能成像等后续生物成像任务中落地应用。</td>
+    </tr>
+	  
+	<tr>
+      <td>&nbsp;</td>
+    </tr> 
+	  
+	 <tr>
+      <td colspan="3" class="Context1" style="font-size: 20px">
+		<p><strong>Advanced Imaging 2025年第5期封面文章：</strong></p> 
+		<p style="text-align: center"><img src="images/ResearchProcess19-5.jpg" width="500" height="683" alt=""/></p>
+	    <p>&nbsp;</p>  
+	    </td>
+	</tr> 
+	<tr>
+      <td colspan="3" class="Context1" style="font-size: 20px">中国激光杂志社公众号报道：<a href="https://mp.weixin.qq.com/s/1t--0ewLxuJu0Ly9bSQ3dw"><strong>封面 | 高斯自适应层析，让3D细胞世界更清晰</strong> </a></td>
+    </tr>  
+	  
+	<tr>
+      <td>&nbsp;</td>
+    </tr>   
+	<tr>
+      <td colspan="3" class="Context1" style="font-size: 20px">文章信息：RChenyu Xu, Zhouyu Jin, Chengkang Shen, Hao Zhu, Zhan Ma, Bo Xiong, You Zhou, Xun Cao, Ning Gu, "3D Gaussian adaptive reconstruction for Fourier light-field microscopy," Adv. Imaging 2, 055001 (2025). <a href="https://www.researching.cn/articles/OJ652a82f30d22719a">https://www.researching.cn/articles/OJ652a82f30d22719a</a>.</td>
+    </tr>  
+		    	  
+	  
+	<tr>
+      <td>&nbsp;</td>
+    </tr>
+
+	  
+    </table>
+</div>
+<p>&nbsp;</p>
+</body>
+</html>
