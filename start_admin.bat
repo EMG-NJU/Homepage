@@ -4,10 +4,13 @@ title EMG@NJU Website Content Manager
 cd /d "%~dp0"
 
 rem ===================================================================
-rem  EMG@NJU 网站内容管理工具 - 通用启动器 v4
+rem  EMG@NJU 网站内容管理工具 - 通用启动器 v5
 rem -------------------------------------------------------------------
-rem  自动检测本机 Python 3 和 Git，不写死任何用户名或绝对路径，
-rem  所以在任何一台装有 Python 3 的 Windows 电脑上都能直接双击运行。
+rem  自动检测本机 Python 3、Git 和 Windows 系统代理，不写死任何用户名
+rem  或绝对路径，所以在任何一台 Windows 电脑上都能直接双击运行。
+rem
+rem  v5 新增：git 不读 Windows 系统代理，直连 github.com 常常连不上，
+rem  所以启动时自动把系统代理注入 HTTP_PROXY/HTTPS_PROXY 供 git 使用。
 rem ===================================================================
 
 set "PF86=%ProgramFiles(x86)%"
@@ -15,6 +18,8 @@ set "LOG=%~dp0_launcher_diagnostics.txt"
 set "PYRUN="
 set "PYPATH="
 set "GITDIR="
+set "SYSPROXY="
+set "PROXYTMP="
 
 >"%LOG%" echo EMG@NJU launcher diagnostics
 >>"%LOG%" echo time        : %DATE% %TIME%
@@ -80,10 +85,33 @@ if not defined PYRUN goto nopython
 
 if not exist "%~dp0admin\server.py" goto noserver
 
+rem ---------- 3. 自动检测 Windows 系统代理 ----------------------------
+rem  git 不使用 Windows 系统代理，直连 github.com 在多数国内网络下超时；
+rem  这里把系统代理转成环境变量交给 git，端口变化或换电脑都无需手工配置。
+rem  注意：带引号的解释器路径放进 for /f 的子命令会被 cmd 的引号剥离规则
+rem  弄坏，所以这里刻意改用「重定向到临时文件 + set /p 读第一行」。
+set "PROXYTMP=%~dp0_launcher_proxy.tmp"
+%PYRUN% "%~dp0admin\proxy_env.py" > "%PROXYTMP%" 2>nul
+set /p "SYSPROXY="<"%PROXYTMP%"
+del /q "%PROXYTMP%" >nul 2>nul
+if defined SYSPROXY if /i not "!SYSPROXY:~0,4!"=="http" set "SYSPROXY="
+>>"%LOG%" echo.
+>>"%LOG%" echo --- system proxy ---
+if defined SYSPROXY (
+    set "HTTP_PROXY=!SYSPROXY!"
+    set "HTTPS_PROXY=!SYSPROXY!"
+    set "http_proxy=!SYSPROXY!"
+    set "https_proxy=!SYSPROXY!"
+    >>"%LOG%" echo [ok  ] !SYSPROXY!
+) else (
+    >>"%LOG%" echo [none] no usable system proxy found
+)
+
 echo  ---------------------------------------------------------------
 echo   EMG@NJU 网站内容管理工具
 echo   Python : !PYPATH!
 if defined GITDIR (echo   Git    : !GITDIR!) else (echo   Git    : 未找到 - 站内“推送 GitHub”不可用)
+if defined SYSPROXY (echo   代理   : !SYSPROXY!) else (echo   代理   : 未检测到系统代理 - 推送 GitHub 可能连不上)
 echo  ---------------------------------------------------------------
 echo   管理界面会自动在浏览器中打开：
 echo   http://127.0.0.1:8765/
